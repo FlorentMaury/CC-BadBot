@@ -24,7 +24,7 @@ test('affiche le bouton Search', () => {
 // Test pour vérifier la présence d'un champ de saisie pour les messages
 test('affiche un champ de saisie pour les messages', () => {
   render(<App />);
-  const inputElement = screen.getByPlaceholderText(/Enter artist's name/i);
+  const inputElement = screen.getByPlaceholderText(/Enter a name/i);
   expect(inputElement).toBeInTheDocument();
 });
 
@@ -32,7 +32,7 @@ test('affiche un champ de saisie pour les messages', () => {
 test('ajoute un message dans la liste après envoi', async () => {
   render(<App />);
   // Simuler l'ajout d'un message
-  const inputElement = screen.getByPlaceholderText(/Enter artist's name/i);
+  const inputElement = screen.getByPlaceholderText(/Enter a name/i);
   const buttonElement = screen.getByRole('button', { name: /Search/i });
 
   // Simuler la saisie d'un message et son envoi

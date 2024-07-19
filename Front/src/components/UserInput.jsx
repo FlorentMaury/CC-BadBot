@@ -17,7 +17,7 @@ const UserInput = ({ onSubmit }) => {
         type="text"
         value={name}
         onChange={(e) => setName(e.target.value)}
-        placeholder="Enter artist's name"
+        placeholder="Enter a name"
         required
       />
       <button type="submit">Search</button>
