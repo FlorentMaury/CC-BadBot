@@ -65,7 +65,7 @@ app.post('/api/artist', async (req, res) => {
           "content": [
             {
               "type": "text",
-              "text": "Tu vas me sortir un texte avec les un petit descriptif méchant et vulgaire mais humoristique de cet artiste."
+              "text": "Tu vas me sortir un texte avec les un petit descriptif méchant et vulgaire mais humoristique de cet personne."
             }
           ]
         },
@@ -74,7 +74,7 @@ app.post('/api/artist', async (req, res) => {
           "content": [
             {
               "type": "text",
-              "text": `Donne-moi des informations sur l'artiste nommé ${name}.`
+              "text": `Donne-moi des informations sur la personne nommé ${name}.`
             }
           ]
         }

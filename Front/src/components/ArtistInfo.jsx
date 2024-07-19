@@ -14,7 +14,7 @@ const ArtistInfo = ({ data }) => {
 
   return (
     <div className='result fadeIn'>
-      <h2>Artist Information</h2>
+      <h2>Information</h2>
       {/* Utilise formatText pour afficher data avec des sauts de ligne */}
       <p>{formatText(JSON.stringify(data, null, 2))}</p>
     </div>
