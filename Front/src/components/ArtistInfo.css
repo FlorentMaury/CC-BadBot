@@ -1,0 +1,32 @@
+.result {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    max-width: 100%;
+    height: auto;
+    text-wrap: wrap;
+}
+
+.result p {
+    text-align: left;
+    max-width: 600px; /* Ajustez selon la largeur souhaitée */
+    white-space: pre-wrap;
+    word-wrap: break-word;
+    margin: 0 auto;
+    overflow: visible; /* Assurez-vous que le contenu débordant est visible */
+}
+
+.fadeIn {
+    animation: fadeIn 0.5s ease-out;
+    animation-fill-mode: forwards; /* Gardez l'état final de l'animation */
+}
+
+@keyframes fadeIn {
+    from {
+        opacity: 0;
+    }
+    to {
+        opacity: 1;
+    }
+}
